@@ -1,0 +1,134 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>景区查询及路线规划</title>
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/echarts.min.js"></script>
+	<script type="text/javascript" src="js/js.js"></script>
+    <script type="text/javascript" src="dist/leaflet/include-leaflet.js"></script>
+    <script src="./js/TreavelData.js"></script>
+	<link rel="stylesheet" href="css/style.css">
+    
+	
+</head>
+
+<body>
+	<div class="head clearfix">
+		<h1 class="pulll_left">四川省旅游资源数据可视化中心</h1>
+		<div class="menu menu2 pulll_left">
+			<ul>
+				<li><a href="index.html">首页</a></li>
+				<li><a href="地图平台.html">点聚图</a></li>
+				<li><a href="热力图.html">热力图</a></li>
+				<li><a href="柱状图.html">柱状图</a></li>
+				<li><a href="景区搜索.html">景区搜索</a></li>
+				<li><a href="自驾路线规划.html">自驾路线规划</a></li>
+				<li><a href="旅行社.html">旅行社</a></li>
+			</ul>
+		</div>
+		<div class="time" id="showTime">2018/6/12 17:00:12</div>
+
+	</div>
+	<div class="mainbox">
+
+		<ul class="clearfix nav1">
+			<li style="width: 22%">
+				<div class="box">
+					<div class="tit">四川省景区数据汇总</div>
+					<div class="boxnav" style="height: 330px;">
+						<div class="yqlist">
+							<ul class="clearfix">
+								<li>
+									<div class="yq" id="yq">939</div>
+									<span>全省景区总数</span>
+								</li>
+								<li>
+									<div class="yq">1827</div>
+									<span>全省旅行社总数</span>
+								</li>
+								<li>
+									<div class="content">
+										<div class="yq">999</div>
+										<div><span>旅游厕所总数</span></div>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="box">
+					<div class="tit">城市景区数量</div>
+					<div class="boxnav" style="height: 190px;">
+						<div style="height:400px" id="echart2"></div>
+
+					</div>
+				</div>
+			</li>
+			<li style="width: 56%">
+
+				<div class="box">
+					<div class="boxnav mapc" style="height: 618px; position: relative">
+						<!-- <div class="map" id="map"></div> -->
+						<div class="SichuanMap">
+							<div id='map' style="height: 668px;"></div>
+						</div>
+						<div class="search">
+							<form class="search1" action="">
+								<input id="input1" type="text" placeholder="查询景点">
+								<ul class="search-suggestions" id="search-suggestions"></ul>
+								<button id="btn1" type="button">添加目的地</button>
+							</form>
+							<form class="search2" action="">
+								<button id="btn2" type="button">添加出发地</button>
+								<button id="btn3" type="button">查询最佳路径</button>
+							</form>
+						</div>
+                        
+					</div>
+					<div> </div>
+				</div>
+			</li>
+			<li style="width: 22%">
+				<div class="box">
+					<div class="tit">热门城市推荐</div>
+					<div class="boxnav" id="echart4" style="height: 200px;">
+
+					</div>
+				</div>
+				<div class="box">
+					<div class="tit">景区分级数量</div>
+					<div class="boxnav" style="height: 320px;" id="echart5">
+
+
+
+					</div>
+				</div>
+			</li>
+		</ul>
+
+
+
+		<script>
+			var t = null;
+			t = setTimeout(time, 1000);//開始运行
+			function time() {
+				clearTimeout(t);//清除定时器
+				dt = new Date();
+				var y = dt.getFullYear();
+				var mt = dt.getMonth() + 1;
+				var day = dt.getDate();
+				var h = dt.getHours();//获取时
+				var m = dt.getMinutes();//获取分
+				var s = dt.getSeconds();//获取秒
+				document.getElementById("showTime").innerHTML = y + "/" + mt + "/" + day + " " + h + ":" + m + ":" + s + "";
+				t = setTimeout(time, 1000); //设定定时器，循环运行     
+			}
+
+		</script>
+	</div>
+</body>
+
+</html>
+<script type="text/javascript" src="./js/map3_自驾路线规划.html.js"></script>
