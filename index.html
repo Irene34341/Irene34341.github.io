@@ -1,0 +1,202 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="renderer" content="webkit" />
+  <meta name="force-rendering" content="webkit" />
+  <title></title>
+  <link type="text/css" rel="stylesheet" href="css/p1.css" />
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"> -->
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
+
+</head>
+
+<body>
+
+  <div class="container">
+    <img src="images/banner3.jpg" width="100%" />
+    <div class="text">
+      <a href="首页.html"> 首页</a>
+      <a href="地图平台.html">景区数据可视化</a>
+    </div>
+  </div>
+
+
+  <div class="container">
+    <div class="head1">
+      <p style="margin-top: 40px;">四川景区概况</p>
+      <span class="ccsl">SICHUAN SCENIC OVERVIEW</span>
+    </div>
+    <div class="text2">
+      四川省地貌东西差异大，地形复杂多样，高差悬殊，地势呈西高东低的特点，由山地、丘陵、平原、盆地和高原构成。
+      <br>四川有世界遗产7处，列居全国第二位。其中：世界自然遗产3处（九寨沟、黄龙、四川大熊猫栖息地），世界文化与自然双重遗产1处（峨眉山—乐山大佛），世界文化遗产1处（青城山—都江堰），世界灌溉工程遗产2处（东风堰、都江堰）。列入世界《人与生物圈保护网络》的保护区有4处（九寨、卧龙、黄龙、稻城亚丁）
+    </div>
+
+
+    <div class="head1">
+      <p>文苑之旅</p>
+      <p class="ccsl">COURT TRAVEL</p>
+    </div>
+
+    <div class="container">
+      <div class="box">
+        <a href="https://baike.baidu.com/item/%E5%B3%A8%E7%9C%89%E5%B1%B1/2676?fr=ge_ala" target="_blank">
+          <img src="images/1.png" />
+        </a>
+        <p>峨眉山</p>
+      </div>
+      <div class="box">
+        <a href="https://baike.baidu.com/item/%E9%9D%92%E5%9F%8E%E5%B1%B1/1512?fr=ge_ala" target="_blank">
+          <img src="images/2.png" />
+        </a>
+        <p>青城山</p>
+      </div>
+      <div class="box">
+        <a href="https://baike.baidu.com/item/%E4%B9%9D%E5%AF%A8%E6%B2%9F%E5%9B%BD%E5%AE%B6%E7%BA%A7%E8%87%AA%E7%84%B6%E4%BF%9D%E6%8A%A4%E5%8C%BA/8762684?fromtitle=%E4%B9%9D%E5%AF%A8%E6%B2%9F&fromid=122560&fr=aladdin"
+          target="_blank">
+          <img src="images/3.png" />
+        </a>
+        <p>九寨沟</p>
+      </div>
+    </div>
+
+
+
+    <div class="part3">
+      <div class="head1">
+        <p>四川景区</p>
+        <p class="ccsl">SICHUAN SCENCIC SPOT</p>
+      </div>
+      <div class="p3con">
+        <div class="p3conL">
+          <div class="subBox0">
+            <ul style="margin-left: 0px; overflow: hidden">
+              <li><img src="images/4.png" /></li>
+              <li><img src="images/5.png" /></li>
+              <li><img src="images/6.png" /></li>
+            </ul>
+          </div>
+        </div>
+        <div class="p3conR">
+          <img src="images/logo.jpg" />
+          <div class="tit ccsl">景 | 区 | 介 | 绍</div>
+          <div class="sub">
+            四川拥有国家级风景名胜区15处（2017年），省级风景名胜区75处（2010年）。有“中国旅游胜地40佳”5处（2010年）。截止2020年底，四川省境内国家5A级旅游景区15家，4A级284家。
+          </div>
+          <div class="updowm">
+            <p class="up">上一个</p>
+            <p class="down">下一个</p>
+          </div>
+        </div>
+      </div>
+      <script type="text/javascript">
+        $(function () {
+          var left = $(".up");
+          var right = $(".down");
+          var obj = $(".subBox0 ul");
+          var w = obj.find("li").innerWidth();
+
+          left.click(function () {
+            obj.find("li:last").prependTo(obj);
+            obj.css("margin-left", -w);
+            obj.animate({ "margin-left": 0 });
+          });
+
+          right.click(function () {
+            obj.animate({ "margin-left": -w }, function () {
+              obj.find("li:first").appendTo(obj);
+              obj.css("margin-left", "0");
+            });
+          });
+          var moving = setInterval(function () { right.click() }, 3000);
+          obj.hover(function () {
+            clearInterval(moving);
+          }, function () {
+            moving = setInterval(function () { right.click() }, 3000);
+          })
+        });
+      </script>
+      <div class="morebox">
+        <span class="img"></span>
+      </div>
+    </div>
+
+
+    <div class="clear"></div>
+    <div class="part4">
+      <div class="main">
+        <div class="head1">
+          <p style="margin-top: 40px;">景区推荐</p>
+          <span class="ccsl">Scenic Area Recommendation</span>
+        </div>
+        <ul>
+          <li>
+            <div class="newl">
+              <div class="head3">九寨沟</div>
+              <div class="sub"> 九寨沟位于四川省西北部岷山山脉南段的阿坝藏族羌族自治州九寨沟县漳扎镇境内，地处岷山南段弓杠岭的东北侧。距离成都市400多千米，系长江水系嘉陵江上游白水江源头的一条大支沟。
+                九寨沟自然保护区地势南高北低，山谷深切，高差悬殊。</div>
+            </div>
+            <div class="newr">
+              <span>09.10</span>
+              <time>2023</time>
+            </div>
+            <div class="clear"></div>
+          </li>
+          <li>
+            <div class="newl">
+              <div class="head3">青城山</div>
+              <div class="sub">
+                青城山位于四川省成都市都江堰市西南，东距成都市区68千米，处于都江堰水利工程西南10千米处。景区面积200平方千米，最高峰老君阁海拔1260米，青城山分为前山和后山，群峰环绕起伏、林木葱茏幽翠，享有“青城天下幽”的美誉。
+              </div>
+            </div>
+            <div class="newr">
+              <span>03.31</span>
+              <time>2024</time>
+            </div>
+            <div class="clear"></div>
+          </li>
+          <li>
+            <div class="newl">
+              <div class="head3">峨眉山</div>
+              <div class="sub">
+                峨眉山属邛崃山脉支脉，地处中国四川盆地的西南边缘。峨眉山文化底蕴深厚。佛教、道教、武术、山茶文化在峨眉山蓬勃发展，多位历史名人在此留下诗篇；1996年，峨眉山绝大部分文物被联合国教科文组织列入《世界文化遗产》名录。
+              </div>
+            </div>
+            <div class="newr">
+              <span>03.25</span>
+              <time>2024</time>
+            </div>
+            <div class="clear"></div>
+          </li>
+          <li>
+            <div class="newl">
+              <div class="head3">都江堰</div>
+              <div class="sub">
+                都江堰，位于四川省成都市都江堰市城西，坐落在成都平原西部的岷江上。始建于秦昭王末年（约公元前256年-前251年），是蜀郡太守李冰父子在前人鳖灵开凿的基础上组织修建的大型水利工程，由分水鱼嘴、飞沙堰、宝瓶口等部分组成。
+              </div>
+            </div>
+            <div class="newr">
+              <span>03.21</span>
+              <time>2024</time>
+            </div>
+            <div class="clear"></div>
+          </li>
+        </ul>
+        <div class="head1">
+          MORE
+        </div>
+      </div>
+    </div>
+
+    <div class="foot">
+      <a href="首页.html"> 首页</a>
+      <a href="地图平台.html">景区数据可视化</a>
+      <a href="景区搜索.html">景区查询</a>
+      <a href="自驾路线规划.html">路线规划</a>
+      <a href="旅行社.html">旅行社</a>
+    </div>
+</body>
+
+</html>
