@@ -1,0 +1,35 @@
+.menu_ta {
+    width: 250px;
+}
+
+.list_ta {
+    position: relative;
+}
+
+.inform1_ta {
+    display: block;
+    width: 100%;
+    background-color: #fff;
+    color: black;
+    font-size: 13px;
+}
+
+.inform2_ta {
+    display: none;
+    position: absolute;
+    left: 240px;
+    top: 0px;
+    width: 250px;
+    padding: 10px;
+    border-radius: 5%;
+    background-color: #fff;
+}
+
+.inform1_ta:hover {
+    /* font: bold; */
+    background-color: #d4ead4;
+}
+
+.menu_ta li:hover div {
+    display: block;
+}
