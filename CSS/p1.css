@@ -1,0 +1,317 @@
+/* 图片显示在文字上方 */
+.container {
+  position: relative;
+  text-align: center;
+}
+
+.image {
+  width: 300px;
+}
+
+.text {
+  position: absolute;
+  top: 5%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 20px;
+  color: gray;
+}
+
+.text a {
+  color: gray;
+  text-decoration: none;
+}
+
+.text2 {
+  text-align: center;
+  padding-right: 40px;
+  padding-left: 40px;
+  padding-top: 20px;
+  padding-bottom: 40px;
+}
+
+/* 将三个盒子并排在一起 */
+.container2 {
+  display: flex;
+}
+
+.box {
+  width: 30%;
+  float: left;
+  border: 1px solid black;
+  padding: 20px;
+}
+
+.box img {
+  width: 100%;
+  height: auto;
+}
+
+.box p {
+  text-align: center;
+  font-weight: bold;
+}
+
+/* 标题居中显示 */
+.head1 {
+  color: #658161;
+  text-align: center;
+  font-size: 20px
+}
+
+
+
+.part3 {
+  width: 1200px;
+  margin: 0 auto;
+  overflow: hidden;
+  padding-top: 30px
+}
+
+.p3con {
+  width: 1200px;
+  height: 450px;
+  overflow: hidden;
+  background: #666666
+}
+
+.p3con .p3conL {
+  width: 900px;
+  height: 450px;
+  float: left;
+  overflow: hidden
+}
+
+.subBox0 ul {
+  width: 100000px;
+  margin: 0;
+  padding: 0;
+}
+
+.subBox0 ul li {
+  width: 900px;
+  height: 450px;
+  float: left;
+  display: inline;
+}
+
+.subBox0 ul li img {
+  width: 900px;
+  height: 450px;
+}
+
+.p3con .p3conR {
+  width: 230px;
+  padding: 0 35px;
+  height: 450px;
+  float: right;
+  overflow: hidden
+}
+
+.p3con .p3conR img {
+  display: block;
+  margin: 0 auto;
+  margin-top: 60px;
+  width: 67px;
+  height: 67px;
+  overflow: hidden
+}
+
+.p3con .p3conR .tit {
+  text-align: center;
+  font-size: 18px;
+  color: #fff;
+  margin: 25px auto;
+}
+
+.p3con .p3conR .sub {
+  border-top: 1px solid #f5f6f4;
+  border-bottom: 1px solid #fafafa;
+  padding: 20px 18px;
+  line-height: 20px;
+  color: #fff;
+  max-height: 142px;
+  overflow: hidden;
+}
+
+.p3con .p3conR .updowm {
+  width: 230px;
+  font-size: 14px;
+  color: #fff;
+  margin-top: 20px;
+}
+
+.p3con .p3conR .updowm .up {
+  background: url(../images/left.png) no-repeat left;
+  padding-left: 10px;
+  float: left;
+  cursor: pointer
+}
+
+.p3con .p3conR .updowm .down {
+  padding-right: 10px;
+  background: url(../images/right.png) no-repeat right;
+  float: right;
+  cursor: pointer
+}
+
+
+.part4 {
+  width: 100%;
+  min-width: 1200px;
+  background: #fff;
+  overflow: hidden
+}
+
+.part4 ul {
+  overflow: hidden;
+  list-style-type: none;
+}
+
+.part4 ul li {
+  background: #f8f8f8;
+  padding: 50px 40px;
+  cursor: pointer;
+  margin-bottom: 50px;
+  transition: all 0.5s;
+  display: flex;
+  align-items: center;
+}
+
+.part4 ul li .newl {
+  float: left;
+  top: 0;
+  width: 900px;
+  height: 98px;
+  overflow: hidden
+}
+
+.part4 ul li .newl .head3 {
+  color: #4c4c4c;
+  font-size: 16px;
+  font-weight: bold;
+  overflow: visible;
+  width: 95%;
+  display: block;
+  margin-bottom: 5px;
+  height: 15px;
+  line-height: 15px;
+}
+
+.part4 ul li .newl .sub {
+  font-size: 14px;
+  color: #666666;
+  line-height: 25px;
+  width: 95%;
+  max-height: 50px;
+  overflow: hidden;
+}
+
+.part4 ul li .newr {
+  float: right;
+  border-left: 1px solid #cccccc;
+  width: 255px;
+  height: 98px;
+  overflow: hidden;
+  color: #e0e0e0;
+  font-family: arial;
+  background: url(../images/icon.png) center right no-repeat
+}
+
+.part4 ul li .newr span {
+  font-size: 42px;
+  display: block;
+  line-height: 45px;
+  text-align: right;
+  padding-right: 60px
+}
+
+.part4 ul li .newr time {
+  font-size: 18px;
+  text-align: right;
+  display: block;
+  padding-right: 60px
+}
+
+.part4 ul li:hover {
+  background: #666666;
+}
+
+.part4 ul li:hover .newl .sub {
+  color: #f5f7f4;
+}
+
+.part4 ul li:hover .newr span {
+  color: #fff
+}
+
+.more2 {
+  width: 57px;
+  height: 57px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+
+
+
+.foot {
+  width: 50%;
+  margin: auto;
+  background-color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+.foot a {
+  color: gray;
+  text-decoration: none;
+}
+
+.fot {
+  padding-bottom: 60px;
+  padding-top: 15px;
+  width: 60%;
+  margin: 0 auto;
+  color: #999999;
+  font-size: 14px;
+  text-align: center;
+  line-height: 26px;
+}
+
+.brandnav {
+  width: 1200px;
+  margin: 0 auto;
+  height: 35px;
+  overflow: hidden;
+  line-height: 35px;
+  color: #999999;
+  font-size: 14px;
+}
+
+.brandnav .con {
+  max-width: 1200px;
+  height: 35px;
+  float: right;
+  overflow: hidden
+}
+
+.typebox {
+  width: 1200px;
+  margin: 0 auto;
+  padding-top: 10px;
+  background: url(../images/line.png) repeat-x bottom;
+  text-align: center;
+  padding-bottom: 25px
+}
+
+.typebox a {
+  display: inline-block;
+  font-size: 14px;
+  color: #666;
+  line-height: 35px;
+  margin: auto 25px;
+}
+
+.typebox a:hover {
+  background: url(../images/typebg.png) no-repeat
+}
