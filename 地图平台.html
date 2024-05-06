@@ -7,11 +7,11 @@
 	<script type="text/javascript" src="js/jquery.js"></script>
 	<script type="text/javascript" src="js/echarts.min.js"></script>
 	<title data-i18n="resources.title_markerCluster"></title>
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script><!-- 添加chart.js库 -->
-    <script type="text/javascript" include="leaflet.markercluster" src="dist/leaflet/include-leaflet.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/chart.js"></script><!-- 添加chart.js库 -->
+	<script type="text/javascript" include="leaflet.markercluster" src="dist/leaflet/include-leaflet.js"></script>
 	<script type="text/javascript" src="js/js.js"></script>
 	<link rel="stylesheet" href="css/style.css">
-	
+
 </head>
 
 <body>
@@ -19,13 +19,29 @@
 		<h1 class="pulll_left">四川省旅游资源数据可视化中心</h1>
 		<div class="menu menu2 pulll_left">
 			<ul>
-				<li><a href="index.html">首页</a></li>
-				<li><a href="地图平台.html">点聚图</a></li>
-				<li><a href="热力图.html">热力图</a></li>
-				<li><a href="柱状图.html">柱状图</a></li>
-				<li><a href="景区搜索.html">景区搜索</a></li>
-				<li><a href="自驾路线规划.html">自驾路线规划</a></li>
-				<li><a href="旅行社.html">旅行社</a></li>
+				<li><a href="首页.html">首页</a></li>
+				<li>
+					<div class="dropdown">
+						<a href="地图平台.html">点聚图</a>
+						<div class="dropdown-content">
+							<a href="热力图.html">热力图</a>
+							<a href="柱状图.html">柱状图</a>
+							<a href="景区搜索.html">景区搜索</a>
+							<a href="自驾路线规划.html">自驾路线规划</a>
+							<a href="旅行社.html">旅行社</a>
+						</div>
+					</div>
+				</li>
+				<li>
+					<a href="Statisticalgraph/图书馆(磁盘占用图).html">图书馆</a>
+				</li>
+				<li>
+					<a href="Statisticalgraph/旅游饭店(关系图).html">旅游饭店</a>
+				</li>
+				<li>
+					< a href="Statisticalgraph/文化馆(树图)/tree-basic.html">文化馆</a>
+				</li>
+
 			</ul>
 		</div>
 		<div class="time" id="showTime">2018/6/12 17:00:12</div>
@@ -70,7 +86,6 @@
 
 				<div class="box">
 					<div class="boxnav mapc" style="height: 618px; position: relative">
-						<!-- <div class="map" id="map"></div> -->
 						<div class="SichuanMap">
 							<div id='map' style="height: 668px;"></div>
 						</div>
